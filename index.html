@@ -1,477 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yunha Kim</title>
-  <style>
-    :root {
-      --bg: #f3f2ee;
-      --text: #111111;
-      --muted: #626262;
-      --line: rgba(17, 17, 17, 0.18);
-      --accent: #8f1d1d;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yunha Kim</title>
+<style>
 
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      letter-spacing: 0.01em;
-    }
+:root{
+  --bg:#ffffff;
+  --text:#111;
+  --muted:#666;
+  --line:rgba(0,0,0,0.18);
+  --accent:#8f1d1d;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+*{box-sizing:border-box}
 
-    button {
-      color: inherit;
-      font: inherit;
-    }
+body{
+  margin:0;
+  font-family:"Source Han Serif","Noto Serif CJK KR","Noto Serif KR","Batang","Times New Roman",serif;
+  background:var(--bg);
+  color:var(--text);
+}
 
-    .site {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 205px;
-    }
+.site{
+  display:grid;
+  grid-template-columns:1fr 200px;
+  min-height:100vh;
+}
 
-    .content {
-      min-height: 100vh;
-      padding: 28px 40px 36px 34px;
-      position: relative;
-    }
+.content{
+  padding:30px 40px 30px 40px;
+}
 
-    .sidebar {
-      border-left: 1px solid var(--line);
-      padding: 18px 22px 28px 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-    }
+.sidebar{
+  border-left:1px solid var(--line);
+  padding:20px 22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
 
-    .brand {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      min-height: 285px;
-      padding-top: 2px;
-    }
+/* top right logo */
+.brand{
+  display:flex;
+  justify-content:flex-end;
+}
 
-    .brand img {
-      width: 150px;
-      height: auto;
-      display: block;
-      opacity: 0.95;
-    }
+.brand img{
+  width:150px;
+}
 
-    .nav {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: flex-end;
-      padding-bottom: 2px;
-    }
+/* right menu */
+.nav{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:10px;
+}
 
-    .nav button {
-      border: none;
-      background: transparent;
-      padding: 0;
-      cursor: pointer;
-      font-size: 1rem;
-      line-height: 1.1;
-      opacity: 0.95;
-      position: relative;
-    }
+.nav button{
+  border:none;
+  background:none;
+  font:inherit;
+  cursor:pointer;
+  font-size:1rem;
+}
 
-    .nav button.active::after {
-      content: "";
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      margin-left: 7px;
-      position: relative;
-      top: -1px;
-    }
+.nav button.active::after{
+  content:"";
+  width:6px;
+  height:6px;
+  background:var(--accent);
+  border-radius:50%;
+  display:inline-block;
+  margin-left:7px;
+}
 
-    .page {
-      display: none;
-      min-height: calc(100vh - 64px);
-      position: relative;
-    }
+.page{display:none}
+.page.active{display:block}
 
-    .page.active {
-      display: block;
-    }
+/* HOME */
+.home-stage{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  min-height:80vh;
+}
 
-    .home-page {
-      min-height: calc(100vh - 64px);
-    }
+.home-stage img{
+  width:85%;
+  max-width:1100px;
+}
 
-    .home-stage {
-      width: 100%;
-      min-height: calc(100vh - 64px);
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding-left: 2px;
-      padding-right: 24px;
-      padding-bottom: 92px;
-    }
+/* CV */
+.cv-wrap{
+  max-width:700px;
+  margin-top:20px;
+}
 
-    .home-stage img {
-      width: min(86%, 1220px);
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
+.cv-name{
+  margin-bottom:20px;
+}
 
-    .page-title {
-      font-size: 1rem;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
+.cv-section{
+  margin-bottom:25px;
+}
 
-    .cv-wrap,
-    .exhibitions-wrap {
-      padding-top: 2px;
-      max-width: 860px;
-    }
+.cv-section-title{
+  margin-bottom:6px;
+}
 
-    .cv-name {
-      font-size: 1rem;
-      margin-bottom: 24px;
-    }
+.cv-body{
+  line-height:1.8;
+}
 
-    .cv-section,
-    .exhibitions-section {
-      margin-bottom: 28px;
-    }
+/* WORKS */
+.works-layout{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:25px;
+}
 
-    .cv-section-title,
-    .exhibitions-section-title {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
+.works-list button{
+  border:none;
+  background:none;
+  padding:4px 0;
+  text-align:left;
+  font:inherit;
+  cursor:pointer;
+  display:flex;
+  gap:8px;
+}
 
-    .cv-body,
-    .exhibitions-body {
-      font-size: 0.98rem;
-      line-height: 1.85;
-      color: var(--text);
-      white-space: pre-line;
-    }
+.year{
+  width:40px;
+  color:var(--muted);
+}
 
-    .works-wrap {
-      padding-top: 2px;
-    }
+.works-list button.active .title{
+  text-decoration:underline;
+}
 
-    .works-layout {
-      display: grid;
-      grid-template-columns: 250px minmax(0, 1fr);
-      gap: 26px;
-      align-items: start;
-    }
+.work-frame{
+  width:100%;
+  aspect-ratio:16/10;
+  background:#000;
+  overflow:hidden;
+}
 
-    .works-list {
-      padding-top: 2px;
-    }
+.work-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:none;
+}
 
-    .works-list button {
-      width: 100%;
-      text-align: left;
-      background: transparent;
-      border: none;
-      padding: 5px 0;
-      cursor: pointer;
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-      font-size: 0.98rem;
-      line-height: 1.4;
-    }
+.work-caption{
+  margin-top:15px;
+  line-height:1.8;
+}
 
-    .works-list .year {
-      min-width: 42px;
-      color: var(--muted);
-      flex-shrink: 0;
-    }
+.work-caption a{
+  text-decoration:underline;
+}
 
-    .works-list button.active .title {
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
+/* CONTACT */
+.contact-page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:70vh;
+}
 
-    .work-view {
-      max-width: 980px;
-    }
+.contact-card{
+  text-align:center;
+  line-height:2;
+}
 
-    .work-frame {
-      width: 100%;
-      aspect-ratio: 16 / 9.8;
-      background: #000;
-      overflow: hidden;
-      position: relative;
-    }
+@media (max-width:1000px){
 
-    .work-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
-    }
+.site{
+  grid-template-columns:1fr;
+}
 
-    .work-frame.blank::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: #000;
-    }
+.sidebar{
+  border-left:none;
+  border-top:1px solid var(--line);
+  flex-direction:row;
+  align-items:center;
+}
 
-    .work-caption {
-      padding-top: 16px;
-      max-width: 760px;
-      font-size: 0.97rem;
-      line-height: 1.8;
-    }
+.nav{
+  flex-direction:row;
+}
 
-    .work-caption em {
-      font-style: italic;
-    }
+.works-layout{
+  grid-template-columns:1fr;
+}
 
-    .work-caption a {
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
+}
 
-    .contact-page {
-      min-height: calc(100vh - 64px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 88px;
-    }
-
-    .contact-card {
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.95;
-    }
-
-    @media (max-width: 1100px) {
-      .site {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        position: static;
-        height: auto;
-        border-left: none;
-        border-top: 1px solid var(--line);
-        order: 2;
-        flex-direction: row;
-        align-items: center;
-        gap: 18px;
-      }
-
-      .brand {
-        min-height: auto;
-      }
-
-      .brand img {
-        width: 110px;
-      }
-
-      .nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 14px;
-        align-items: center;
-      }
-
-      .content {
-        padding: 24px 22px 28px;
-      }
-
-      .works-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .home-stage {
-        min-height: 60vh;
-        padding-bottom: 40px;
-      }
-    }
-  </style>
+</style>
 </head>
+
 <body>
-  <div class="site">
-    <main class="content">
-      <section class="page home-page active" id="home-page">
-        <div class="home-stage">
-          <img src="/mnt/data/yunhakimsign.png" alt="Yunha Kim signature" />
-        </div>
-      </section>
 
-      <section class="page" id="cv-page">
-        <div class="cv-wrap">
-          <div class="cv-name">Yunha Kim</div>
+<div class="site">
 
-          <div class="cv-section">
-            <div class="cv-section-title">Education</div>
-            <div class="cv-body">To be updated</div>
-          </div>
+<main class="content">
 
-          <div class="cv-section">
-            <div class="cv-section-title">Bio</div>
-            <div class="cv-body">To be updated</div>
-          </div>
+<section class="page active" id="home-page">
+<div class="home-stage">
+<img src="signature-main.png">
+</div>
+</section>
 
-          <div class="cv-section">
-            <div class="cv-section-title">Selected Exhibitions</div>
-            <div class="cv-body">To be updated</div>
-          </div>
+<section class="page" id="cv-page">
 
-          <div class="cv-section">
-            <div class="cv-section-title">Awards / Residencies</div>
-            <div class="cv-body">To be updated</div>
-          </div>
-        </div>
-      </section>
+<div class="cv-wrap">
 
-      <section class="page" id="works-page">
-        <div class="works-wrap">
-          <div class="works-layout">
-            <div class="works-list" id="works-list"></div>
+<div class="cv-name">Yunha Kim</div>
 
-            <div class="work-view">
-              <div class="work-frame" id="work-frame">
-                <img id="work-image" alt="Selected work image" />
-              </div>
-              <div class="work-caption" id="work-caption"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+<div class="cv-section">
+<div class="cv-section-title">Education</div>
+<div class="cv-body">To be updated</div>
+</div>
 
-      <section class="page" id="exhibitions-page">
-        <div class="exhibitions-wrap">
-          <div class="exhibitions-section">
-            <div class="exhibitions-section-title">Exhibitions</div>
-            <div class="exhibitions-body">To be updated</div>
-          </div>
-        </div>
-      </section>
+<div class="cv-section">
+<div class="cv-section-title">Bio</div>
+<div class="cv-body">To be updated</div>
+</div>
 
-      <section class="page contact-page" id="contact-page">
-        <div class="contact-card">
-          <div>ms.kimyuna@gmail.com</div>
-          <div>@yuna.rchive</div>
-        </div>
-      </section>
-    </main>
+<div class="cv-section">
+<div class="cv-section-title">Selected Exhibitions</div>
+<div class="cv-body">To be updated</div>
+</div>
 
-    <aside class="sidebar">
-      <div class="brand">
-        <img src="/mnt/data/9f60e759-8247-4ecf-a6d4-a5b781ebf1eb.png" alt="Yunha Kim" />
-      </div>
-      <nav class="nav" aria-label="Main navigation">
-        <button class="nav-btn active" data-page="home-page">Home</button>
-        <button class="nav-btn" data-page="cv-page">CV</button>
-        <button class="nav-btn" data-page="works-page">Works</button>
-        <button class="nav-btn" data-page="exhibitions-page">Exhibitions</button>
-        <button class="nav-btn" data-page="contact-page">Contact</button>
-      </nav>
-    </aside>
-  </div>
+<div class="cv-section">
+<div class="cv-section-title">Awards / Residencies</div>
+<div class="cv-body">To be updated</div>
+</div>
 
-  <script>
-    const pages = document.querySelectorAll('.page');
-    const navButtons = document.querySelectorAll('.nav-btn');
+</div>
 
-    function showPage(pageId) {
-      pages.forEach((page) => page.classList.toggle('active', page.id === pageId));
-      navButtons.forEach((button) => button.classList.toggle('active', button.dataset.page === pageId));
-    }
+</section>
 
-    navButtons.forEach((button) => {
-      button.addEventListener('click', () => showPage(button.dataset.page));
-    });
+<section class="page" id="works-page">
 
-    const works = [
-      {
-        title: 'Prayer for a Daughter',
-        year: '2025',
-        image: '/mnt/data/딸을위한기도.jpg',
-        caption: `<em>Prayer for a Daughter</em>, 2025<br>Single-channel video, color, sound<br>9 min 24 sec<br><a href="#" id="contact-link">Full video available upon request (Contact)</a>`
-      },
-      {
-        title: 'Work Title',
-        year: '2025',
-        image: '',
-        caption: `<em>Work Title</em>, 2025<br>Information to be updated` 
-      },
-      {
-        title: 'Work Title',
-        year: '2024',
-        image: '',
-        caption: `<em>Work Title</em>, 2024<br>Information to be updated` 
-      }
-    ];
+<div class="works-layout">
 
-    const worksList = document.getElementById('works-list');
-    const workFrame = document.getElementById('work-frame');
-    const workImage = document.getElementById('work-image');
-    const workCaption = document.getElementById('work-caption');
+<div class="works-list" id="works-list"></div>
 
-    function renderWorksList() {
-      worksList.innerHTML = '';
-      works.forEach((work, index) => {
-        const button = document.createElement('button');
-        button.innerHTML = `<span class="year">${work.year}</span><span class="title">${work.title}</span>`;
-        if (index === 0) button.classList.add('active');
-        button.addEventListener('click', () => selectWork(index));
-        worksList.appendChild(button);
-      });
-    }
+<div>
 
-    function selectWork(index) {
-      const work = works[index];
-      [...worksList.querySelectorAll('button')].forEach((btn, i) => {
-        btn.classList.toggle('active', i === index);
-      });
+<div class="work-frame" id="work-frame">
+<img id="work-image">
+</div>
 
-      workCaption.innerHTML = work.caption;
+<div class="work-caption" id="work-caption"></div>
 
-      if (work.image) {
-        workImage.src = work.image;
-        workImage.style.display = 'block';
-        workFrame.classList.remove('blank');
-      } else {
-        workImage.removeAttribute('src');
-        workImage.style.display = 'none';
-        workFrame.classList.add('blank');
-      }
+</div>
 
-      const contactLink = document.getElementById('contact-link');
-      if (contactLink) {
-        contactLink.addEventListener('click', (event) => {
-          event.preventDefault();
-          showPage('contact-page');
-        });
-      }
-    }
+</div>
 
-    renderWorksList();
-    selectWork(0);
-  </script>
+</section>
+
+<section class="page contact-page" id="contact-page">
+
+<div class="contact-card">
+
+<div>ms.kimyuna@gmail.com</div>
+<div>@yuna.rchive</div>
+
+</div>
+
+</section>
+
+</main>
+
+<aside class="sidebar">
+
+<div class="brand">
+<img src="signature-main.png">
+</div>
+
+<nav class="nav">
+
+<button class="nav-btn active" data-page="home-page">Home</button>
+<button class="nav-btn" data-page="cv-page">CV</button>
+<button class="nav-btn" data-page="works-page">Works</button>
+<button class="nav-btn" data-page="contact-page">Contact</button>
+
+</nav>
+
+</aside>
+
+</div>
+
+<script>
+
+const pages=document.querySelectorAll('.page')
+const navButtons=document.querySelectorAll('.nav-btn')
+
+function showPage(pageId){
+
+pages.forEach(p=>p.classList.toggle('active',p.id===pageId))
+navButtons.forEach(b=>b.classList.toggle('active',b.dataset.page===pageId))
+
+}
+
+navButtons.forEach(button=>{
+
+button.addEventListener('click',()=>{
+showPage(button.dataset.page)
+})
+
+})
+
+const works=[
+{
+title:"Prayer for a Daughter",
+year:"2025",
+image:"prayer.jpg",
+caption:`<em>Prayer for a Daughter</em>, 2025<br>
+Single-channel video, color, sound<br>
+9 min 24 sec<br>
+<a href="#" id="contact-link">Full video available upon request (Contact)</a>`
+},
+{
+title:"Work Title",
+year:"2024",
+image:"",
+caption:"Information to be updated"
+}
+]
+
+const worksList=document.getElementById('works-list')
+const workImage=document.getElementById('work-image')
+const workFrame=document.getElementById('work-frame')
+const workCaption=document.getElementById('work-caption')
+
+function renderWorks(){
+
+worksList.innerHTML=""
+
+works.forEach((work,index)=>{
+
+const button=document.createElement('button')
+button.innerHTML=`<span class="year">${work.year}</span><span class="title">${work.title}</span>`
+
+if(index===0)button.classList.add('active')
+
+button.addEventListener('click',()=>selectWork(index))
+
+worksList.appendChild(button)
+
+})
+
+}
+
+function selectWork(index){
+
+const work=works[index]
+
+[...worksList.querySelectorAll('button')].forEach((b,i)=>{
+b.classList.toggle('active',i===index)
+})
+
+workCaption.innerHTML=work.caption
+
+if(work.image){
+workImage.src=work.image
+workImage.style.display='block'
+}
+else{
+workImage.style.display='none'
+}
+
+const link=document.getElementById('contact-link')
+
+if(link){
+link.addEventListener('click',e=>{
+
+e.preventDefault()
+showPage('contact-page')
+
+})
+}
+
+}
+
+renderWorks()
+selectWork(0)
+
+</script>
+
 </body>
 </html>
