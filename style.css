@@ -27,3 +27,12 @@ body {
   font-wight: 500;
   text-align: left;
 }
+
+.signature {
+  position: absolute;
+
+  left: 120px;
+  bottom: 80px;
+
+  width: 900px;
+}
