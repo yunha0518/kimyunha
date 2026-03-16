@@ -4,6 +4,7 @@ body {
   font-family: 'Noto Serif KR', serif;
 }
 
+<!--Home페이지-->
 .home {
   position: relative;
   width: 100vw;
@@ -85,4 +86,64 @@ body {
 
   background: #b30000;
   border-radius: 50%;
+}
+<!--Home페이지 끝-->
+
+<!--CV페이지-->
+.cv_page {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: #f3f3f3;
+}
+
+.cv_content {
+  margin-left: 75px;
+  padding-top: 200px;
+  width: 870px;
+}
+
+.cv_name {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.cv_based {
+  margin-top: 18px;
+  margin-bottom: 70px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cv_section {
+  margin-bottom: 52px;
+}
+
+.cv_section h2 {
+  margin: 0 0 24px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cv_section p {
+  margin: 0 0 26px 0;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.cv_menu {
+  position: absolute;
+  top: 50px;
+  right: 85px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.cv_signature {
+  width: 360px;
+  height: auto;
 }
