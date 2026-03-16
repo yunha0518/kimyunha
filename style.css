@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background: white;
+  font-family: 'Source Han Serif', serif;
+}
+
+.home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.location {
+  position: absolute;
+  top: 90px;
+  left: 320px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.cities {
+  font-wight: 500;
+  text-align: left;
+}
