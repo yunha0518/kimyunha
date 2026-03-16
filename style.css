@@ -31,9 +31,9 @@ body {
 .signature {
   position: absolute;
 
-  left: 120px;
-  bottom: 80px;
+  left: 60px;
+  bottom: 40px;
 
-  width: 300px;
+  width: 450px;
   height: auto;
 }
