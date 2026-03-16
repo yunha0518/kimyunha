@@ -12,9 +12,8 @@ body {
 }
 
 .location {
-  position: absolute;
-  top: 90px;
-  left: 320px;
+  margin-top: 90px;
+  margin-left: 320px;
   display: inline-flex;
   align-items: flex-start;
   gap: 6px;
@@ -29,11 +28,11 @@ body {
 }
 
 .signature {
-  position: absolute;
+  display: block;
 
-  left: 60px;
-  bottom: 40px;
+  margin-left: 120px;
+  margin-top: 386px;
 
   width: 900px;
-  height: auto;
+  height: 500px;
 }
