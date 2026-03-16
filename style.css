@@ -119,6 +119,12 @@ body {
 
 .cv_section {
   margin-bottom: 52px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid;
+}
+
+.cv_section:last-child {
+  border-bottom: none;
 }
 
 .cv_section h2 {
