@@ -17,7 +17,7 @@ body {
   display: inline-flex;
   align-items: flex-start;
   gap: 6px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.05;
 }
