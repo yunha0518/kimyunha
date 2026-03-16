@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   background: white;
@@ -93,7 +97,7 @@ body {
 <!--CV페이지-->
 .cv_page {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: #ffffff;
 }
