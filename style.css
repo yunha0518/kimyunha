@@ -136,8 +136,8 @@ body {
 
 .cv_menu {
   position: absolute;
-  top: 50px;
-  right: 85px;
+  top: 120px;
+  right: 140px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
