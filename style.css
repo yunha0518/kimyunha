@@ -117,7 +117,7 @@ body {
 .cv_based {
   margin-top: 18px;
   margin-bottom: 70px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -165,7 +165,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #f3f3f3;
+  background: #ffffff;
 }
 
 .contact_content {
@@ -181,16 +181,16 @@ body {
 
 .contact_label {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .contact_value {
   margin: 2px 0 0 0;
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .instagram_label {
@@ -199,15 +199,15 @@ body {
 
 .contact_note {
   margin-top: 26px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .contact_menu {
   position: absolute;
-  top: 50px;
-  right: 85px;
+  top: 120px;
+  right: 140px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
