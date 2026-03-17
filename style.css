@@ -158,6 +158,66 @@ body {
   width: 360px;
   height: auto;
 }
+<!--cv페이지-->
+
+<!--contact페이지-->
+.contact_page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f3f3;
+}
+
+.contact_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 430px;
+}
+
+.contact_info {
+  text-align: center;
+}
+
+.contact_label {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.contact_value {
+  margin: 2px 0 0 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.instagram_label {
+  margin-top: 26px;
+}
+
+.contact_note {
+  margin-top: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.contact_menu {
+  position: absolute;
+  top: 50px;
+  right: 85px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.contact_signature {
+  width: 360px;
+  height: auto;
+}
 
 @media (max-width: 768px) {
   .home,
