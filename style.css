@@ -8,7 +8,7 @@ body {
   font-family: 'Noto Serif KR', serif;
 }
 
-<!--Home페이지-->
+/*Home페이지*/
 .home {
   position: relative;
   width: 100vw;
@@ -92,9 +92,9 @@ body {
   background: #b30000;
   border-radius: 50%;
 }
-<!--Home페이지 끝-->
+/*Home페이지 끝*/
 
-<!--CV페이지-->
+/*CV페이지*/
 .cv_page {
   position: relative;
   width: 100%;
@@ -158,9 +158,9 @@ body {
   width: 360px;
   height: auto;
 }
-<!--cv페이지-->
+/*cv페이지*/
 
-<!--contact페이지-->
+/*contact페이지*/
 .contact_page {
   position: relative;
   width: 100%;
@@ -218,4 +218,4 @@ body {
   width: 360px;
   height: auto;
 }
-<!--contact페이지-->
+/*contact페이지*/
