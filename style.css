@@ -228,3 +228,22 @@ body {
   height: auto;
 }
 /*contact페이지*/
+
+/*works페이지*/
+.works_image {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* 이미지 사이 간격 */
+}
+
+/* 모든 썸네일 동일 크기 */
+.works_image img {
+  width: 800px;
+  height: auto;
+  display: block;
+}
+
+/* 캡션과 이미지 사이 간격 */
+.works_description {
+  margin-top: 24px;
+}
