@@ -230,20 +230,77 @@ body {
 /*contact페이지*/
 
 /*works페이지*/
+.works_page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.works_list {
+  position: absolute;
+  top: 250px;
+  left: 75px;
+  width: 280px;
+}
+
+.works_group {
+  margin-bottom: 26px;
+}
+
+.works_title {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.works_group p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.active_work {
+  font-weight: 600;
+}
+
 .works_image {
+  margin-left: 420px;
+  padding-top: 250px;
+  width: 720px;
+
   display: flex;
   flex-direction: column;
-  gap: 14px; /* 이미지 사이 간격 */
+  gap: 14px;
 }
 
-/* 모든 썸네일 동일 크기 */
 .works_image img {
-  width: 800px;
-  height: auto;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* 캡션과 이미지 사이 간격 */
 .works_description {
+  margin-left: 420px;
   margin-top: 24px;
+  padding-bottom: 60px;
+  width: 720px;
+}
+
+.works_description p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.works_description a {
+  color: black;
+  text-decoration: none;
+}
+
+.works_description a:hover {
+  opacity: 0.6;
 }
