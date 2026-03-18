@@ -269,9 +269,9 @@ body {
 }
 
 .works_image {
-  margin-left: 440px;
-  padding-top: 260px;
-  width: 960px;
+  margin-left: 450px;
+  padding-top: 265px;
+  width: 820px;
 
   display: flex;
   flex-direction: column;
