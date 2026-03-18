@@ -240,9 +240,9 @@ body {
 }
 
 .works_list {
-  position: absolute;
-  top: 250px;
+  position: fixed;
   left: 75px;
+  bottom: 60px;
   width: 280px;
 }
 
