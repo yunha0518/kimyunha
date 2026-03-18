@@ -247,17 +247,17 @@ body {
 }
 
 .works_group {
-  margin-bottom: 26px;
+  margin-bottom: 34px;
 }
 
 .works_title {
-  margin: 0 0 10px 0;
+  margin: 0 0 14px 0;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 1000;
   line-height: 1.2;
 }
 
-.works_group p {
+.works_group p:not(.works_title) {
   margin: 0;
   font-size: 17px;
   font-weight: 400;
