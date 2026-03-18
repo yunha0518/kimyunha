@@ -227,6 +227,7 @@ body {
 .contact_signature {
   width: 360px;
   height: auto;
+  margin-top: -70px;
 }
 /*contact페이지*/
 
