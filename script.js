@@ -29,7 +29,7 @@ const worksData = {
 
   thepillars: {
     images: [
-      "images/The Pillars1.jpg",
+      "images/ThePillars1.jpg",
       "images/ThePillars2.jpg",
       "images/ThePillars3.jpg"
     ],
