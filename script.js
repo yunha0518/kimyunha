@@ -39,7 +39,7 @@ const worksData = {
       "images/ThePillars3.jpg"
     ],
     description: `
-      <p>The Pillars, 2025</p>
+      <p>The Pillars, 2024</p>
       <p>Single-channel video, color, sound</p>
       <p>8 min 24 sec</p>
       <p>
@@ -57,7 +57,7 @@ const worksData = {
       "images/IntheCurrent4.jpg"
     ],
     description: `
-      <p>In the Current, 2025</p>
+      <p>In the Current, 2024</p>
       <p>Single-channel video, color, sound</p>
       <p>9 min 25 sec</p>
       <p>
@@ -73,7 +73,7 @@ const worksData = {
       "images/IamLiving_Installation.png"
     ],
     description: `
-      <p>I am Living, 2025</p>
+      <p>I am Living, 2024</p>
       <p>Single-channel video installation, color, sound, variable dimensions</p>
       <p>Looped</p>
       <p>
