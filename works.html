@@ -30,53 +30,44 @@
   <!-- 왼쪽 작품 리스트 -->
   <div class="works_list">
 
-    <div class="works_group">
-      <p class="works_title">Limen (2022)</p>
-      <p>Unseparated</p>
-      <p>Dysphoria</p>
-      <p>Change of State</p>
-      <p>Angiocarpous</p>
-    </div>
-
-    <div class="works_group">
-      <p class="works_title">The Living and the Leaving (2024 - 2025)</p>
-      <p>I am Living</p>
-      <p>In the Current</p>
-      <p>The Pillars</p>
-      <p>Detachment</p>
-
-      <!-- 현재 선택된 작품 -->
-      <p class="active_work">
-        Prayer for a Daughter
-      </p>
-    </div>
-
+  <div class="works_group">
+    <p class="works_title">Limen (2022)</p>
+    <p class="work_item" onclick="showWork('unseparated', this)">Unseparated</p>
+    <p class="work_item" onclick="showWork('dysphoria', this)">Dysphoria</p>
+    <p class="work_item" onclick="showWork('changeofstate', this)">Change of State</p>
+    <p class="work_item" onclick="showWork('angiocarpous', this)">Angiocarpous</p>
   </div>
 
-
-  <!-- 이미지 영역 -->
-  <div class="works_image">
-
-    <img src="images/prayer1.jpg">
-    <img src="images/prayer2.jpg">
-    <img src="images/prayer3.jpg">
-    <img src="images/prayer4.jpg">
-
-  </div>
-
-
-  <!-- 작품 설명 -->
-  <div class="works_description">
-    <p>Prayer for a Daughter, 2025</p>
-    <p>Single-channel video, color, sound</p>
-    <p>9 min 24 sec</p>
-    <p>
-      Full video available upon request
-      (<a href="contact.html">Contact</a>)
-    </p>
+  <div class="works_group">
+    <p class="works_title">The Living and the Leaving (2024 - 2025)</p>
+    <p class="work_item" onclick="showWork('iamliving', this)">I am Living</p>
+    <p class="work_item" onclick="showWork('inthecurrent', this)">In the Current</p>
+    <p class="work_item" onclick="showWork('thepillars', this)">The Pillars</p>
+    <p class="work_item" onclick="showWork('detachment', this)">Detachment</p>
+    <p class="work_item active_work" onclick="showWork('prayer', this)">Prayer for a Daughter</p>
   </div>
 
 </div>
 
+  <div class="works_image" id="works_image">
+  <img src="images/prayer1.jpg">
+  <img src="images/prayer2.jpg">
+  <img src="images/prayer3.jpg">
+  <img src="images/prayer4.jpg">
+</div>
+
+<div class="works_description" id="works_description">
+  <p>Prayer for a Daughter, 2025</p>
+  <p>Single-channel video, color, sound</p>
+  <p>9 min 24 sec</p>
+  <p>
+    Full video available upon request
+    (<a href="contact.html">Contact</a>)
+  </p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
