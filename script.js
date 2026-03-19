@@ -23,7 +23,12 @@ const worksData = {
     ],
     description: `
       <p>Detachment, 2025</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>1 min 25 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -35,7 +40,12 @@ const worksData = {
     ],
     description: `
       <p>The Pillars, 2025</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>8 min 24 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -48,7 +58,12 @@ const worksData = {
     ],
     description: `
       <p>In the Current, 2025</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>9 min 25 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -59,7 +74,12 @@ const worksData = {
     ],
     description: `
       <p>I am Living, 2025</p>
-      <p>Single-channel video / installation</p>
+      <p>Single-channel video installation, color, sound, variable dimensions</p>
+      <p>Looped</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -72,7 +92,12 @@ const worksData = {
     ],
     description: `
       <p>Unseparated, 2022</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>8 min 8 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -85,7 +110,12 @@ const worksData = {
     ],
     description: `
       <p>Dysphoria, 2022</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>4 min 52 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -95,7 +125,12 @@ const worksData = {
     ],
     description: `
       <p>Change of State, 2022</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>7 min 7 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   },
 
@@ -107,7 +142,12 @@ const worksData = {
     ],
     description: `
       <p>Angiocarpous, 2022</p>
-      <p>Single-channel video</p>
+      <p>Single-channel video, color, sound</p>
+      <p>2 min 45 sec</p>
+      <p>
+        Full video available upon request
+        (<a href="contact.html">Contact</a>)
+      </p>
     `
   }
 };
