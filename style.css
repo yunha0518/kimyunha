@@ -327,12 +327,11 @@ body {
 .statement_content {
   margin-left: 75px;
   padding-top: 260px;
-  width: 760px;
+  width: 1000px;
 }
 
 .statement_content p {
   margin: 0 0 18px 0;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.35;
-}
+  line-height: 1.2;
