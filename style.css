@@ -314,3 +314,25 @@ body {
 .work_item {
   cursor: pointer;
 }
+/*works페이지*/
+
+/*staement페이지*/
+.statement_page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.statement_content {
+  margin-left: 75px;
+  padding-top: 260px;
+  width: 760px;
+}
+
+.statement_content p {
+  margin: 0 0 18px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.35;
+}
