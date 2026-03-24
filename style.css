@@ -371,8 +371,17 @@ body {
 }
 /*staement페이지*/
 
-/*모바일*/
+/* =========================
+   Mobile
+========================= */
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* 공통 페이지 박스 */
   .home,
   .cv_page,
   .works_page,
@@ -380,96 +389,56 @@ body {
   .contact_page {
     width: 100%;
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
   }
 
+  /* 데스크탑 absolute/fixed 흔적 최대한 제거 */
+  .menu,
+  .cv_menu,
+  .contact_menu,
+  .works_list,
+  .works_image,
+  .works_description,
+  .cv_content,
+  .statement_content,
+  .contact_content,
+  .location,
+  .signature,
+  .cv_signature,
+  .contact_signature {
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  /* 공통 메뉴: 모바일에서는 전부 아래쪽으로 */
   .menu,
   .cv_menu,
   .contact_menu {
     position: static !important;
-    margin-top: auto !important;
-    padding: 40px 20px 60px 20px !important;
+    margin: auto 20px 0 20px !important;
+    padding: 40px 0 60px 0 !important;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+
+    width: auto !important;
+    max-width: none !important;
   }
 
-  /* Home */
-  .mobile_popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-  }
-
-  .mobile_popup_box {
-    width: calc(100% - 40px);
-    max-width: 320px;
-    background: white;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .mobile_popup_box p {
-    margin: 0 0 14px 0;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .mobile_popup_box button {
-    border: 1px solid black;
-    background: white;
-    padding: 6px 14px;
-    font: inherit;
-    cursor: pointer;
-  }
-  
-  .home {
-    height: auto;
-  }
-
-  .location {
-    margin: 24px 20px 0 20px !important;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 6px;
-    font-size: 14px;
-    line-height: 1.05;
-  }
-
-  .signature {
-    display: block;
-    margin: 40px 20px 40px 20px !important;
-    width: min(320px, 82vw) !important;
-    height: auto !important;
-  }
-
-  .menu {
-    position: static !important;
-    margin: 20px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .introduction {
-    writing-mode: horizontal-tb;
-    font-size: 16px;
-    line-height: 1.2;
-    margin-top: 0 !important;
-  }
-
+  /* 혹시 menu 내부에 desktop용 들여쓰기 남아있으면 제거 */
   .menu_nav {
     display: flex;
     flex-direction: column;
     gap: 0;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .menu_nav a.menu_home {
@@ -484,26 +453,60 @@ body {
     padding-right: 16px;
   }
 
-  /* CV */
-  .cv_menu {
-    position: static !important;
-    margin: 20px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+  .introduction {
+    writing-mode: horizontal-tb;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  /* -----------------
+     Home
+  ----------------- */
+  .home {
+    height: auto;
+  }
+
+  .location {
+    position: static !important;
+    margin: 24px 20px 0 20px !important;
+    padding: 0 !important;
+
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+
+    font-size: 14px;
+    line-height: 1.05;
+    width: auto !important;
+  }
+
+  .signature {
+    position: static !important;
+    display: block;
+    width: min(320px, 82vw) !important;
+    height: auto !important;
+    margin: 40px 20px 0 20px !important;
+    padding: 0 !important;
+  }
+
+  /* -----------------
+     CV
+  ----------------- */
   .cv_signature {
+    position: static !important;
+    display: block;
     width: min(220px, 55vw) !important;
     height: auto !important;
-    margin-top: 0 !important;
+    margin: 0 0 0 0 !important;
+    padding: 0 !important;
   }
 
   .cv_content {
     width: auto !important;
     margin: 24px 20px 60px 20px !important;
-    padding-top: 0 !important;
+    padding: 0 !important;
   }
 
   .cv_name {
@@ -531,11 +534,14 @@ body {
     line-height: 1.3;
   }
 
-  /* Works */
+  /* -----------------
+     Works
+  ----------------- */
   .works_list {
     position: static !important;
     width: auto !important;
     margin: 24px 20px 0 20px !important;
+    padding: 0 !important;
   }
 
   .works_group {
@@ -560,21 +566,24 @@ body {
   }
 
   .works_image {
+    position: static !important;
     width: auto !important;
     margin: 24px 20px 0 20px !important;
-    padding-top: 0 !important;
+    padding: 0 !important;
     gap: 10px;
   }
 
   .works_image img {
     width: 100% !important;
     height: auto !important;
+    display: block;
   }
 
   .works_description {
+    position: static !important;
     width: auto !important;
     margin: 18px 20px 60px 20px !important;
-    padding-bottom: 0 !important;
+    padding: 0 !important;
   }
 
   .works_description p {
@@ -582,11 +591,21 @@ body {
     line-height: 1.3;
   }
 
-  /* Statement */
+  /* works 페이지에서 메뉴가 위에 붙어 있으면,
+     HTML상 .menu가 맨 위에 있어도 아래쪽으로 밀리게 */
+  .works_page .menu,
+  .works_page .cv_menu,
+  .works_page .contact_menu {
+    margin-top: auto !important;
+  }
+
+  /* -----------------
+     Statement
+  ----------------- */
   .statement_content {
     width: auto !important;
     margin: 24px 20px 60px 20px !important;
-    padding-top: 0 !important;
+    padding: 0 !important;
   }
 
   .statement_content p {
@@ -595,32 +614,36 @@ body {
     margin-bottom: 14px;
   }
 
-  /* Contact */
-  .contact_menu {
-    position: static !important;
-    margin: 20px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+  .statement_page .menu,
+  .statement_page .cv_menu,
+  .statement_page .contact_menu {
+    margin-top: auto !important;
   }
 
+  /* -----------------
+     Contact
+  ----------------- */
   .contact_signature {
+    position: static !important;
+    display: block;
     width: min(220px, 55vw) !important;
     height: auto !important;
-    margin-top: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .contact_content {
-    width: 100%;
+    width: 100% !important;
     justify-content: center !important;
-    padding-top: 80px !important;
+    margin: 24px 0 0 0 !important;
+    padding: 0 !important;
   }
 
   .contact_info {
     width: 100%;
     padding: 0 20px 60px 20px;
     text-align: center !important;
+    box-sizing: border-box;
   }
 
   .contact_label,
@@ -633,5 +656,42 @@ body {
   .instagram_label,
   .contact_note {
     margin-top: 18px;
+  }
+
+  /* -----------------
+     Mobile popup
+  ----------------- */
+  .mobile_popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+
+  .mobile_popup_box {
+    width: calc(100% - 40px);
+    max-width: 320px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .mobile_popup_box p {
+    margin: 0 0 14px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .mobile_popup_box button {
+    border: 1px solid black;
+    background: white;
+    padding: 6px 14px;
+    font: inherit;
+    cursor: pointer;
+  }
+}
   }
 }
