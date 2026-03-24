@@ -374,6 +374,18 @@ body {
     min-height: 100vh;
   }
 
+  .cv_page,
+  .works_page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cv_menu,
+  .works_page .cv_menu {
+    margin-top: auto;
+    padding: 40px 20px 60px 20px;
+  }
+
   /* Home */
   .home {
     height: auto;
