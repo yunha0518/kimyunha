@@ -86,6 +86,10 @@ body {
   padding-right: 30px; /* 점 자리 확보 */
 }
 
+.menu_nav a:hover {
+  opacity: 0.6;
+}
+
 .menu_nav a.active::after {
   content: "";
 
