@@ -693,5 +693,116 @@ body {
     cursor: pointer;
   }
 }
+
+/* =========================
+   mobile layout fix - order
+   이 블록은 기존 @media 맨 아래에 추가
+========================= */
+@media screen and (max-width: 768px) {
+  /* 공통: 페이지를 세로 flex로 확실히 */
+  .home,
+  .cv_page,
+  .works_page,
+  .statement_page,
+  .contact_page {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+  }
+
+  /* 공통: 메뉴는 무조건 아래쪽 순서 */
+  .menu,
+  .cv_menu,
+  .contact_menu {
+    order: 99 !important;
+    margin-top: auto !important;
+  }
+
+  /* home: location -> signature -> menu */
+  .home .location {
+    order: 1 !important;
+  }
+
+  .home .signature {
+    order: 2 !important;
+  }
+
+  .home .menu {
+    order: 3 !important;
+  }
+
+  /* cv: content -> signature/menu */
+  .cv_page .cv_content {
+    order: 1 !important;
+  }
+
+  .cv_page .cv_menu {
+    order: 2 !important;
+  }
+
+  .cv_page .cv_signature {
+    order: 3 !important;
+    display: block !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  /* works: list -> image -> description -> menu */
+  .works_page .works_list {
+    order: 1 !important;
+  }
+
+  .works_page .works_image {
+    order: 2 !important;
+  }
+
+  .works_page .works_description {
+    order: 3 !important;
+  }
+
+  .works_page .menu,
+  .works_page .cv_menu,
+  .works_page .contact_menu {
+    order: 4 !important;
+    margin-top: auto !important;
+  }
+
+  /* statement: content -> menu */
+  .statement_page .statement_content {
+    order: 1 !important;
+  }
+
+  .statement_page .menu,
+  .statement_page .cv_menu,
+  .statement_page .contact_menu {
+    order: 2 !important;
+    margin-top: auto !important;
+  }
+
+  /* contact: content -> signature/menu */
+  .contact_page .contact_content {
+    order: 1 !important;
+  }
+
+  .contact_page .contact_menu {
+    order: 2 !important;
+  }
+
+  .contact_page .contact_signature {
+    order: 3 !important;
+    display: block !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  /* 위쪽 공백을 만드는 가능성 있는 margin 제거 */
+  .home .signature,
+  .cv_page .cv_signature,
+  .contact_page .contact_signature,
+  .home .menu,
+  .cv_page .cv_menu,
+  .contact_page .contact_menu,
+  .works_page .menu,
+  .statement_page .menu {
+    top: auto !important;
+    bottom: auto !important;
   }
 }
