@@ -9,6 +9,10 @@ body {
 }
 
 /*Home페이지*/
+.mobile_popup {
+  display: none;
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -400,6 +404,37 @@ body {
   }
 
   /* Home */
+  .mobile_popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+
+  .mobile_popup_box {
+    width: calc(100% - 40px);
+    max-width: 320px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .mobile_popup_box p {
+    margin: 0 0 14px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .mobile_popup_box button {
+    border: 1px solid black;
+    background: white;
+    padding: 6px 14px;
+    font: inherit;
+    cursor: pointer;
+  }
+  
   .home {
     height: auto;
   }
