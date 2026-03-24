@@ -320,7 +320,25 @@ body {
 }
 
 .work_item {
+  position: relative;
+  display: block;
+  padding-right: 18px; /* 점 자리 */
   cursor: pointer;
+}
+
+.work_item.active_work::after {
+  content: "";
+
+  position: absolute;
+  right: 145px;   /* ← 정렬 핵심 */
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 9px;
+  height: 9px;
+
+  background: #b30000;
+  border-radius: 50%;
 }
 /*works페이지*/
 
