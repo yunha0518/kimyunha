@@ -177,3 +177,23 @@ function showWork(workKey, clickedElement) {
     clickedElement.classList.add("active_work");
   }
 }
+
+function closeMobilePopup() {
+  const popup = document.getElementById("mobilePopup");
+  if (popup) {
+    popup.style.display = "none";
+    localStorage.setItem("mobilePopupShown", "true");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+  const isMobile = window.innerWidth <= 768;
+  const alreadyShown = localStorage.getItem("mobilePopupShown");
+
+  if (isMobile && !alreadyShown) {
+    const popup = document.getElementById("mobilePopup");
+    if (popup) {
+      popup.style.display = "flex";
+    }
+  }
+});
