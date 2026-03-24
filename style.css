@@ -461,6 +461,21 @@ body {
     padding: 0 !important;
   }
 
+  /* cv / contact 메뉴 내부에서
+   signature를 menu 텍스트보다 위로 올리기 */
+.cv_menu,
+.contact_menu {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.cv_menu .cv_signature,
+.contact_menu .contact_signature {
+  order: -1 !important;
+  display: block !important;
+  margin: 0 0 12px 0 !important;
+}
+
   /* -----------------
      Home
   ----------------- */
@@ -740,12 +755,6 @@ body {
     order: 2 !important;
   }
 
-  .cv_page .cv_signature {
-  order: 1 !important;
-  display: block !important;
-  margin: 0 0 12px 0 !important;
-}
-
   /* works: list -> image -> description -> menu */
   .works_page .works_list {
     order: 1 !important;
@@ -786,12 +795,6 @@ body {
   .contact_page .contact_menu {
     order: 2 !important;
   }
-
-  .contact_page .contact_signature {
-  order: 1 !important;
-  display: block !important;
-  margin: 0 0 12px 0 !important;
-}
 
   /* 위쪽 공백을 만드는 가능성 있는 margin 제거 */
   .home .signature,
