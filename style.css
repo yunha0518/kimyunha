@@ -380,14 +380,17 @@ body {
   .contact_page {
     width: 100%;
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .menu,
   .cv_menu,
   .contact_menu {
     position: static !important;
-    margin: 20px 20px 0 20px !important;
-    padding: 0 !important;
+    margin-top: auto !important;
+    padding: 40px 20px 60px 20px !important;
 
     display: flex;
     flex-direction: column;
