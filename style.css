@@ -370,6 +370,6 @@ body {
 /*모바일*/
 @media screen and (max-width: 768px) {
   html, body {
-    background: pink !important;
+    background: #69936c !important;
   }
 }
