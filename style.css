@@ -49,7 +49,7 @@ body {
   position: absolute;
 
   top: 120px;
-  right: 140px;
+  right: 120px;
 
   display: flex;
   flex-direction: row;
@@ -165,7 +165,7 @@ body {
 .cv_menu {
   position: absolute;
   top: 120px;
-  right: 140px;
+  right: 120px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -234,7 +234,7 @@ body {
 .contact_menu {
   position: absolute;
   top: 120px;
-  right: 140px;
+  right: 120px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
