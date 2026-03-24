@@ -83,7 +83,7 @@ body {
   font-weight: 100;
   line-height: 1.2;
 
-  padding-right: 20px; /* 점 자리 확보 */
+  padding-right: 50px; /* 점 자리 확보 */
 }
 
 .menu_nav a.active::after {
