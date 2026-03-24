@@ -504,3 +504,39 @@ body {
     margin-top: 18px;
   }
 }
+
+ .works_list {
+    position: static;
+    width: auto;
+    margin: 28px 20px 0 20px;
+  }
+
+  .works_group {
+    margin-bottom: 24px;
+  }
+
+  .works_title,
+  .works_group p,
+  .work_item {
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .works_image {
+    width: auto;
+    margin: 24px 20px 0 20px;
+    padding-top: 0;
+    gap: 10px;
+  }
+
+  .works_description {
+    width: auto;
+    margin: 18px 20px 60px 20px;
+    padding-bottom: 0;
+  }
+
+  .works_description p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
