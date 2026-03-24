@@ -368,8 +368,8 @@ body {
 /*staement페이지*/
 
 /*모바일*/
-@media (max-width: 768px) {
-  body {
+@media screen and (max-width: 768px) {
+  html, body {
     background: pink !important;
   }
 }
