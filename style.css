@@ -369,6 +369,11 @@ body {
 
 /*모바일*/
 @media (max-width: 768px) {
+
+  body {
+    background: pink !important;
+  }
+  
   .home,
   .cv_page,
   .works_page,
