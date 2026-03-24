@@ -103,6 +103,10 @@ body {
   background: #b30000;
   border-radius: 50%;
 }
+
+.mobile_notice {
+  display: none;
+}
 /*Home페이지 끝*/
 
 /*CV페이지*/
@@ -380,6 +384,15 @@ body {
     flex-direction: column;
   }
 
+.mobile_notice {
+    display: block;
+    padding: 14px 20px 10px 20px;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #444;
+    background: white;
+  }
+  
   .cv_menu,
   .works_page .cv_menu {
     margin-top: auto;
