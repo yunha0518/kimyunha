@@ -13,7 +13,6 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #ffffff;
 }
 
 .location {
@@ -111,7 +110,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #ffffff;
 }
 
 .cv_content {
@@ -178,7 +176,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #ffffff;
 }
 
 .contact_content {
@@ -248,7 +245,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #ffffff;
 }
 
 .works_list {
@@ -351,7 +347,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #ffffff;
 }
 
 .statement_content {
