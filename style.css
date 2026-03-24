@@ -386,6 +386,10 @@ body {
     padding: 40px 20px 60px 20px;
   }
 
+  .works_page .cv_menu {
+    margin-top: 40px;
+  }
+
   /* Home */
   .home {
     height: auto;
