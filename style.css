@@ -741,10 +741,10 @@ body {
   }
 
   .cv_page .cv_signature {
-    order: 3 !important;
-    display: block !important;
-    margin: 0 0 12px 0 !important;
-  }
+  order: 1 !important;
+  display: block !important;
+  margin: 0 0 12px 0 !important;
+}
 
   /* works: list -> image -> description -> menu */
   .works_page .works_list {
@@ -788,10 +788,10 @@ body {
   }
 
   .contact_page .contact_signature {
-    order: 3 !important;
-    display: block !important;
-    margin: 0 0 12px 0 !important;
-  }
+  order: 1 !important;
+  display: block !important;
+  margin: 0 0 12px 0 !important;
+}
 
   /* 위쪽 공백을 만드는 가능성 있는 margin 제거 */
   .home .signature,
